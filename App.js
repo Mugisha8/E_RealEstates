@@ -12,3 +12,7 @@ const PORT = process.env.PORT || 3000;
 //---------------------ends
 
 //--------- global routes
+
+app.use("/", (req, res) => {
+  res.send("Modern Real Estates");
+});
