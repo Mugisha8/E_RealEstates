@@ -1,10 +1,11 @@
-import path from "path";
+const path = require("path");
 
-const config = {
-  config: path.resolve("./src/db/config", "config.js"),
-  "models-path": path.resolve("./src/db/models"),
-  "seeders-path": path.resolve("./src/db/seeders"),
-  "migrations-path": path.resolve("./src/db/migrations"),
+module.exports = {
+  config: path.resolve("./db/config", "config.js"),
+
+  "models-path": path.resolve("./db/models"),
+
+  "seeders-path": path.resolve("./db/seeders"),
+
+  "migrations-path": path.resolve("./db/migrations"),
 };
-
-export default config;
