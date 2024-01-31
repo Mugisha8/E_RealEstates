@@ -6,3 +6,16 @@ var config = {
     url: process.env.DbC,
     dialect: "postgres",
   },
+
+  test: {
+    url: process.env.DbC,
+    dialect: "postgres",
+  },
+  production: {
+    url: process.env.DbC,
+    dialect: "postgres",
+  },
+};
+
+// Export the configuration object
+module.exports = config;
